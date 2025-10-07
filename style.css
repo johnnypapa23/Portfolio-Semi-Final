@@ -1,0 +1,222 @@
+/* General */
+body {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #343a40;
+}
+/* Navbar text color */
+.navbar-brand, 
+.nav-link {
+  color: #fff !important;
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+}
+
+/* Space in each section */
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url('img/jeremy-bishop-G9i_plbfDgk-unsplash.jpg') no-repeat center center/cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* About Me Section*/
+#about {
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: #f1f1f1;
+  padding: 80px 20px;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #dcdcdc;
+}
+
+/* Underline for About Me Heading */
+#about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #0d6efd; /* Bootstrap primary blue */
+  margin: 15px auto 30px;
+  border-radius: 2px;
+}
+
+/* Portfolio Section */
+#portfolio {
+  background: url(img/portfolio\ section.jpg) no-repeat center center/cover;
+  color: #fff;
+  padding: 80px 20px;
+}
+#portfolio h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+/* Underline for Portfolio Heading */
+#portfolio h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #0d6efd; /* Bootstrap primary blue */
+  margin: 15px auto 30px;
+  border-radius: 2px;
+}
+#portfolio {
+  position: relative;
+  background: url('img/portfolio section.jpg') no-repeat center center/cover;
+  color: #fff;
+}
+
+#portfolio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); /* dark overlay */
+  z-index: 1;
+}
+
+#portfolio .container {
+  position: relative;
+  z-index: 2; /*text is above overlay */
+}
+
+/* Resume Section */
+#resume img {
+  border: 3px solid #ddd;
+}
+#resume{
+  background: linear-gradient(135deg, #1a1a1a, #000000);
+  color: #f1f1f1;
+  padding: 80px 20px;
+}
+#resume h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#resume h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #0d6efd; /* Bootstrap primary blue */
+  margin: 15px auto 30px;
+  border-radius: 2px;
+}
+
+/*contact Section */
+#contact {
+  background: linear-gradient(135deg, #1a1a1a, #000000);
+  color: #f1f1f1;
+  padding: 80px 20px;
+}
+#contact h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* Underline for Contact Heading */
+#contact h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #0d6efd; /* Bootstrap primary blue */
+  margin: 15px auto 30px;
+  border-radius: 2px;
+}
+
+/* Footer */
+footer {
+  background: #343a40;
+  color: #bbb;
+  padding: 20px 0;
+}
+
+/* Event Section */
+#event {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 80px 20px;
+}
+#event .card {
+  border-radius: 18px;
+  overflow: hidden;
+}
+#event .card-header {
+  background: linear-gradient(90deg, #0d6efd 60%, #343a40 100%);
+  color: #fff;
+  border-bottom: none;
+}
+#event h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+#event h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+#event .card-body {
+  background: #fff;
+}
+#event .lead {
+  font-size: 1.15rem;
+  color: #343a40;
+}
+#event ul.list-unstyled {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+#event form .form-label {
+  font-weight: 500;
+  color: #0d6efd;
+}
+#event form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  box-shadow: none;
+}
+#event form .btn-success {
+  font-size: 1.1rem;
+  padding: 10px 0;
+  border-radius: 8px;
+}
+
+

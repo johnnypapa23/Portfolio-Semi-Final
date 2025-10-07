@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name ‒ Simple Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color:#fff;">☰</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">My Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#event">Event</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="hero" class="hero section">
+    <div class="container">
+      <img src="./img/profile.jpg" alt="Profile Picture" class="profile-img mb-4">
+      <h1>Hi, I'm Julius John T. Remoroza</h1>
+      <h4>Electronics Engineer/Web Developer</h4>
+      <a href="#portfolio" class="btn btn-light mt-3">See My Work</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center">About Me</h2>
+      <p class="lead text-center">I’m an Electronics Engineer and Web Developer with a passion for building innovative solutions both in hardware and software. With a strong foundation in engineering and coding, I enjoy creating efficient systems, responsive websites, and practical tech solutions that bring ideas to life.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2 class="text-center mb-5">Portfolio</h2>
+      <div class="row">
+        <div class="col-md-4 portfolio-item">
+          <img src="./img/JavascriptAct1.png" class="img-fluid" alt="Project 1">
+          <h5 class="mt-2">BMI Calculator with Conditional Statements (JavaScript)</h5>
+          <p>Handle basic math operations, decision-making (if/else), and string interpolation in JavaScript</p>
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <img src="./img/Javascript2.png" class="img-fluid" alt="Project 2">
+          <h5 class="mt-2">Team Competition Score Calculator (JavaScript)</h5>
+          <p>Write reusable functions, apply logic for decision-making, and handle multiple scenarios with conditions in JavaScript.</p>
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <img src="./img/Project 33.png" class="img-fluid" alt="Project 3">
+          <h5 class="mt-2">Meme Page (HTML & CSS)</h5>
+          <p>Work with HTML structure, text formatting, and CSS styling — while also keeping it light and creative!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume (new section) -->
+<section id="resume" class="section bg-light">
+  <div class="container text-center">
+    <h2 class="mb-5">My Resume</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <img src="./img/REMOROZA_RESUME.png" alt="My Resume" 
+             class="img-fluid shadow-lg rounded mb-4">
+        <!-- Download Button (fixed) -->
+        <div class="d-grid gap-2 d-md-flex justify-content-center">
+          <a href="https://drive.google.com/file/d/1bRc5qFwZDl3jJ14gmo2fqYGkn00LAEq9/view?usp=sharing" download 
+             class="btn btn-primary btn-lg">
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Event Section -->
+  <section id="event" class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-lg border-0 mb-5">
+            <div class="card-header bg-primary text-white text-center py-4">
+              <h2 class="mb-1">Workshop Invitation</h2>
+              <h4 class="mb-0">Build Your Own Line-Following Robot</h4>
+            </div>
+            <div class="card-body">
+              <p class="lead">Join us for a hands-on mini-event (real or virtual demo) teaching basic robotics principles. Learn how to design, build, and program a simple robot that can follow a line using sensors and microcontrollers. No prior experience required!</p>
+              <ul class="list-unstyled mb-4">
+                <li><strong>Date:</strong> November 15, 2025</li>
+                <li><strong>Time:</strong> 2:00 PM – 5:00 PM</li>
+                <li><strong>Location:</strong> Online (Zoom) & In-person at Makerspace Lab</li>
+              </ul>
+              <hr>
+              <h5 class="mb-3">Register Now</h5>
+              <form id="eventForm">
+                <div class="mb-3">
+                  <label for="eventName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="eventName" name="eventName" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="eventAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="eventAddress" name="eventAddress" placeholder="Your Address" required>
+                </div>
+                <div class="mb-3">
+                  <label for="eventEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="eventEmail" name="eventEmail" placeholder="Your Email" required>
+                </div>
+                <input type="hidden" name="reply_to" value="">
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-success btn-lg">Submit Registration</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>© 2025 juliusremoroza. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("VL0fCQ9pNrYEnj_Jd"); // Replace with your EmailJS User ID
+    })();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
